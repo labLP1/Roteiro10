@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1510234634 source:/home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/main.cpp
+	"Conta.h"
+	"ContaEspecial.h"
+
+1510234634 /home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/include/Conta.h
+	<iostream>
+	<string>
+	"IConta.h"
+
+1510234753 /home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/include/IConta.h
+	<iostream>
+
+1510234887 /home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/include/ContaEspecial.h
+	<string>
+	"Conta.h"
+
+1510234634 source:/home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/src/Conta.cpp
+	"Conta.h"
+
+1510234887 source:/home/caio/Documentos/RoteirosdeLPI/roteiro10/questao2/src/ContaEspecial.cpp
+	"ContaEspecial.h"
+
