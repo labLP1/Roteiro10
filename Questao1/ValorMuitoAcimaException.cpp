@@ -4,7 +4,7 @@ ValorMuitoAcimaException::ValorMuitoAcimaException( string erro ){
     this->erro = erro;
 }
 
-virtual const string ValorMuitoAcimaException:: What() trow(){
+const string ValorMuitoAcimaException::what() throw(){
     return erro;
 }
 

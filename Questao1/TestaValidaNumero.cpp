@@ -1,10 +1,10 @@
-#include "TestaValidaNumero.h"
+#include "TestaValidadaNumero.h"
 
 
 void TestaValidaNumero::validaNumero(int numero)
 {
 	if (numero <= 0) {
-		throw ValorAbaixoException("Valor Abaixo");
+		throw ValorAbaixoExcepetion("Valor Abaixo");
 	}
 	if (numero > 100 && numero < 1000) {
 		throw ValorAcimaException("Valor Acima");

@@ -4,7 +4,7 @@
 
 using namespace std;
 
-#include "TestaValidaNumero.h"
+#include "TestaValidadaNumero.h"
 #include "ValorMuitoAcimaException.h"
 #include "ValorAcimaException.h"
 #include "ValorAbaixoExcepetion.h"

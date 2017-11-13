@@ -1,14 +1,14 @@
-#include "ValorAbaixoException.h"
+#include "ValorAbaixoExcepetion.h"
 
-ValorAbaixoException::ValorAbaixoException( string erro ){
+ValorAbaixoExcepetion::ValorAbaixoExcepetion( string erro ){
     this->erro = erro;
 }
 
-virtual const string ValorAbaixoException:: What() trow(){
+const string ValorAbaixoExcepetion::what() throw(){
     return erro;
 }
 
-ValorAbaixoException::~ValorAbaixoException(){
+ValorAbaixoExcepetion::~ValorAbaixoExcepetion(){
 	
 	
 }

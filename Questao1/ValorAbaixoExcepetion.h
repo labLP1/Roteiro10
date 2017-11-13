@@ -9,7 +9,7 @@ class ValorAbaixoExcepetion: public exception{
 	
     public:
        virtual const string what() throw();
-       ~ValorAbaixoExcepetion( string erro ); 
+       ~ValorAbaixoExcepetion(  ); 
        ValorAbaixoExcepetion( string erro);
          
     private:
