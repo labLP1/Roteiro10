@@ -7,3 +7,8 @@ ValorMuitoAcimaException::ValorMuitoAcimaException( string erro ){
 virtual const string ValorMuitoAcimaException:: What() trow(){
     return erro;
 }
+
+ValorMuitoAcimaException::~ValorMuitoAcimaException(){
+	
+	
+}

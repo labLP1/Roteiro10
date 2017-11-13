@@ -7,13 +7,19 @@ using namespace std;
 #include "TestaValidaNumero.h"
 #include "ValorMuitoAcimaException.h"
 #include "ValorAcimaException.h"
-#include "ValorAbaixoException.h"
+#include "ValorAbaixoExcepetion.h"
 
 int main(){
     
     TestaValidaNumero t;
-    try{    t.validaNumero(1000); }
-    catch(ValorAbaixoException va){
+	int numero;
+	
+	cout << "Digite um numero: "; 
+	 cin >> numero;
+	
+    try{    t.validaNumero(numero); }
+	
+    catch(ValorAbaixoExcepetion va){
         cout << "ERROR: " << va.what() << endl;
     }  
     catch(ValorAcimaException vc ){
@@ -22,6 +28,8 @@ int main(){
     catch( ValorMuitoAcimaException vm){
         cout << "ERROR: " << vm.what() << endl;         
     }    
+	
+	system("PAUSE");
     return 0;
 
 }

@@ -7,3 +7,8 @@ ValorAcimaException::ValorAcimaException( string erro ){
 virtual const string ValorAcimaException:: What() trow(){
     return erro;
 }
+
+ValorAcimaException::~ValorAcimaException(){
+	
+	
+}

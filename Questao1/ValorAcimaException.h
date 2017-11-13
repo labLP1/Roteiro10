@@ -9,7 +9,7 @@ using namespace std;
 class ValorAcimaException: public exception{
      public:
        virtual const string what() throw();
-       virtual ~ValorAcimaException( string erro ); 
+       ~ValorAcimaException( ); 
        ValorAcimaException( string erro);
          
     private:
