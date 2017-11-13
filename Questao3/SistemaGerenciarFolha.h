@@ -3,6 +3,8 @@
 
 #include <string>
 #include <iostream>
+#include "OrcamentoExtouradoException.h"
+#include "FuncionarioNaoExisteException.h"
 #include "Funcionario.h"
 #include "Assalariado.h"
 #include "Comissionado.h"
@@ -10,7 +12,7 @@
 
 #define MAXFUNCIONARIOS 10 // número máximo de funcionarios
 //#define limpaTela() system("cls") // Windows
-//#define limpaTela() system("clear") // Linux
+
 
 using namespace std;
 

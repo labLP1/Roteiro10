@@ -19,7 +19,13 @@ SistemaGerenciarFolha::SistemaGerenciarFolha()
        if(opcao == 3){
             do{
                opcao2 = this->menuPesquisa();
-               this->pesquisa(opcao2);
+               try{
+				   this->pesquisa(opcao2);
+			   }
+			   catch( FuncionarioNaoExisteException fe){
+				   cout << "ERRO: " << fe.what() << endl;
+			   }
+			   
             }while( opcao2 != 0);
        }
     }while(opcao != 0);
@@ -145,7 +151,7 @@ double SistemaGerenciarFolha::calculaValorTotalFolha(){
 }
 
 void SistemaGerenciarFolha::pesquisa(int opcao){
-    int matricula, i;
+    int matricula, i, aux = 0;
     string nome;
 
     if( opcao == 1){
@@ -157,9 +163,12 @@ void SistemaGerenciarFolha::pesquisa(int opcao){
                 cout << "Nome: " << funcionarios[i]->getNome() << endl;
                 cout << "Matricula: " << funcionarios[i]->getMatricula() << endl;
                 cout << "Salario: " << funcionarios[i]->calculaSalario() << endl;
-
+				aux = 1;
             }
         }
+		if(!aux){
+			throw FuncionarioNaoExisteException("Funcionario nao encontrado");
+		}
         
     }
     if( opcao == 2){
@@ -170,8 +179,11 @@ void SistemaGerenciarFolha::pesquisa(int opcao){
                 cout << "Nome: " << funcionarios[i]->getNome() << endl;
                 cout << "Matricula: " << funcionarios[i]->getMatricula() << endl;
                 cout << "Salario: " << funcionarios[i]->calculaSalario() << endl;
-
+				aux = 1;
             }
         }
+		if(!aux){
+			throw FuncionarioNaoExisteException("Funcionario nao encontrado");
+		}
     }
 }
